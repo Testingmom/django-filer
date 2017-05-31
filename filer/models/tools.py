@@ -3,8 +3,6 @@ from __future__ import absolute_import
 from ..utils.compatibility import GTE_DJANGO_1_10
 from . import Clipboard
 
-DJANGO_LTE_1_10 = LooseVersion(get_version()) < LooseVersion('1.10.0')
-
 
 def discard_clipboard(clipboard):
     clipboard.files.clear()
