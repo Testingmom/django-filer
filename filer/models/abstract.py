@@ -112,7 +112,10 @@ class BaseImage(File):
         image. Return the string 'ALL' if the user has all rights.
         """
         user = request.user
-        if not user.is_authenticated():
+
+        if GTE_DJANGO_1_10 and not user.is_authenticated:
+            return False
+        elif not GTE_DJANGO_1_10 and not user.is_authenticated():
             return False
         elif user.is_superuser:
             return True

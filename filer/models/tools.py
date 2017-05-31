@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import
-
+from ..utils.compatibility import GTE_DJANGO_1_10
 from . import Clipboard
+
+DJANGO_LTE_1_10 = LooseVersion(get_version()) < LooseVersion('1.10.0')
 
 
 def discard_clipboard(clipboard):
@@ -14,7 +16,13 @@ def delete_clipboard(clipboard):
 
 
 def get_user_clipboard(user):
-    if user.is_authenticated():
+    user_authenticated = False
+    if GTE_DJANGO_1_10 and user.is_authenticated:
+        user_authenticated = True
+    elif not GTE_DJANGO_1_10 and user.is_authenticated():
+        user_authenticated = True
+
+    if user_authenticated:
         clipboard = Clipboard.objects.get_or_create(user=user)[0]
         return clipboard
 
