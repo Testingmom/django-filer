@@ -14,16 +14,13 @@ from django.utils.six import StringIO
 from .. import settings as filer_settings
 from ..models import Folder
 from ..models.filemodels import File
-from ..settings import FILER_IMAGE_MODEL
+from ..models.imagemodels import Image
 from ..tests.helpers import (
     SettingsOverride,
     create_folder_structure,
     create_image,
     create_superuser,
 )
-from ..utils.loader import load_model
-
-Image = load_model(FILER_IMAGE_MODEL)
 
 
 class DumpDataTests(TestCase):
@@ -151,3 +148,4 @@ class DumpDataTests(TestCase):
             complete = os.path.join(fileobj.file.storage.location, fileobj.path)
             # Filesystem data too!
             self.assertTrue(os.path.exists(complete))
+

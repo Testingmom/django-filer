@@ -14,9 +14,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: django Filer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-09 08:57+0200\n"
-"PO-Revision-Date: 2018-04-09 06:58+0000\n"
-"Last-Translator: yakky <i.spalletti@nephila.it>\n"
+"POT-Creation-Date: 2017-03-01 14:41-0500\n"
+"PO-Revision-Date: 2017-01-27 08:37+0000\n"
+"Last-Translator: Assma Buifruri <assma.buifruri@hotmail.com>\n"
 "Language-Team: French (http://www.transifex.com/divio/django-filer/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,144 +24,139 @@ msgstr ""
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: admin/fileadmin.py:48 templates/admin/filer/tools/detail_info.html:166
+#: admin/fileadmin.py:53 templates/admin/filer/tools/detail_info.html:166
 msgid "Advanced"
 msgstr "Avancé"
 
-#: admin/fileadmin.py:156
+#: admin/fileadmin.py:165
 msgid "canonical URL"
 msgstr "URL canonique"
 
-#: admin/folderadmin.py:387 admin/folderadmin.py:554
+#: admin/folderadmin.py:386 admin/folderadmin.py:553
 msgid ""
 "Items must be selected in order to perform actions on them. No items have "
 "been changed."
 msgstr "Des éléments doivent être sélectionnés pour effectuer les actions. Aucun élément n'a été modifié."
 
-#: admin/folderadmin.py:407
+#: admin/folderadmin.py:406
 #, python-format
 msgid "%(total_count)s selected"
 msgid_plural "All %(total_count)s selected"
 msgstr[0] "%(total_count)s sélectionné"
 msgstr[1] "Tous les %(total_count)s sélectionnés"
 
-#: admin/folderadmin.py:431
-#, python-format
-msgid "Directory listing for %(folder_name)s"
-msgstr ""
-
-#: admin/folderadmin.py:446
+#: admin/folderadmin.py:445
 #, python-format
 msgid "0 of %(cnt)s selected"
 msgstr "0 sur %(cnt)s sélectionné"
 
-#: admin/folderadmin.py:584
+#: admin/folderadmin.py:583
 msgid "No action selected."
 msgstr "Pas d'action sélectionnée."
 
-#: admin/folderadmin.py:629
+#: admin/folderadmin.py:628
 #, python-format
 msgid "Successfully moved %(count)d files to clipboard."
 msgstr "%(count)d fichiers déplacés avec succès vers le presse-papiers."
 
-#: admin/folderadmin.py:635
+#: admin/folderadmin.py:634
 msgid "Move selected files to clipboard"
 msgstr "Déplacer les fichiers sélectionnés vers le presse-papiers"
 
-#: admin/folderadmin.py:673
+#: admin/folderadmin.py:672
 #, python-format
 msgid "Successfully disabled permissions for %(count)d files."
 msgstr "Permissions désactivées avec succès pour %(count)d fichiers."
 
-#: admin/folderadmin.py:675
+#: admin/folderadmin.py:674
 #, python-format
 msgid "Successfully enabled permissions for %(count)d files."
 msgstr "Permissions activées avec succès pour %(count)d fichiers."
 
-#: admin/folderadmin.py:684
+#: admin/folderadmin.py:683
 msgid "Enable permissions for selected files"
 msgstr "Activer les permissions pour les fichiers sélectionnés."
 
-#: admin/folderadmin.py:691
+#: admin/folderadmin.py:690
 msgid "Disable permissions for selected files"
 msgstr "Désactiver les permissions pour les fichiers sélectionnés."
 
-#: admin/folderadmin.py:756
+#: admin/folderadmin.py:755
 #, python-format
 msgid "Successfully deleted %(count)d files and/or folders."
 msgstr "%(count)d fichiers et/ou dossiers supprimés avec succès."
 
-#: admin/folderadmin.py:761
+#: admin/folderadmin.py:760
 msgid "Cannot delete files and/or folders"
 msgstr "Impossible de supprimer les fichiers et/ou dossiers."
 
-#: admin/folderadmin.py:763
+#: admin/folderadmin.py:762
 msgid "Are you sure?"
 msgstr "Êtes-vous sûr(e) ?"
 
-#: admin/folderadmin.py:769
+#: admin/folderadmin.py:768
 msgid "Delete files and/or folders"
 msgstr "Supprimer les fichiers et/ou dossiers"
 
-#: admin/folderadmin.py:791
+#: admin/folderadmin.py:790
 msgid "Delete selected files and/or folders"
 msgstr "Supprimer les fichiers et/ou dossiers sélectionnés"
 
-#: admin/folderadmin.py:906
+#: admin/folderadmin.py:905
 #, python-format
 msgid "Folders with names %s already exist at the selected destination"
 msgstr "Des dossiers nommés %s existent déjà dans la destination sélectionnée"
 
-#: admin/folderadmin.py:910
+#: admin/folderadmin.py:909
 #, python-format
 msgid ""
 "Successfully moved %(count)d files and/or folders to folder "
 "'%(destination)s'."
 msgstr "%(count)d fichiers et/ou dossiers déplacés avec succès vers le dossier « %(destination)s »."
 
-#: admin/folderadmin.py:918 admin/folderadmin.py:920
+#: admin/folderadmin.py:917 admin/folderadmin.py:919
 msgid "Move files and/or folders"
 msgstr "Déplacer les fichiers et/ou dossiers"
 
-#: admin/folderadmin.py:935
+#: admin/folderadmin.py:934
 msgid "Move selected files and/or folders"
 msgstr "Déplacer les fichiers et/ou dossiers sélectionnés"
 
-#: admin/folderadmin.py:992
+#: admin/folderadmin.py:991
 #, python-format
 msgid "Successfully renamed %(count)d files."
 msgstr "%(count)d fichiers renommés avec succès."
 
-#: admin/folderadmin.py:1001 admin/folderadmin.py:1003
-#: admin/folderadmin.py:1018
+#: admin/folderadmin.py:1000 admin/folderadmin.py:1002
+#: admin/folderadmin.py:1017
 msgid "Rename files"
 msgstr "Renommer les fichiers"
 
-#: admin/folderadmin.py:1113
+#: admin/folderadmin.py:1112
 #, python-format
 msgid ""
 "Successfully copied %(count)d files and/or folders to folder "
 "'%(destination)s'."
 msgstr "%(count)d fichiers et/dossiers copiés avec succès dans le dossier « %(destination)s »."
 
-#: admin/folderadmin.py:1131 admin/folderadmin.py:1133
+#: admin/folderadmin.py:1130 admin/folderadmin.py:1132
 msgid "Copy files and/or folders"
 msgstr "Copier les fichiers et/ou dossiers"
 
-#: admin/folderadmin.py:1150
+#: admin/folderadmin.py:1149
 msgid "Copy selected files and/or folders"
 msgstr "Copier les fichiers et/ou dossiers sélectionnés"
 
-#: admin/folderadmin.py:1255
+#: admin/folderadmin.py:1254
 #, python-format
 msgid "Successfully resized %(count)d images."
 msgstr "%(count)d images redimensionnées avec succès."
 
-#: admin/folderadmin.py:1262 admin/folderadmin.py:1264
+#: admin/folderadmin.py:1261 admin/folderadmin.py:1263
 msgid "Resize images"
 msgstr "Redimensionner les images"
 
-#: admin/folderadmin.py:1280
+#: admin/folderadmin.py:1279
 msgid "Resize selected images"
 msgstr "Redimensionner les images sélectionnées"
 
@@ -214,23 +209,23 @@ msgstr "Une option de miniature ou des paramètres de dimensionnement doivent ê
 msgid "Resize parameters must be choosen."
 msgstr "Des paramètres de dimensionnement doivent être choisis."
 
-#: admin/imageadmin.py:20 admin/imageadmin.py:98
+#: admin/imageadmin.py:16 admin/imageadmin.py:94
 msgid "Subject location"
 msgstr "Emplacement du sujet"
 
-#: admin/imageadmin.py:21
+#: admin/imageadmin.py:17
 msgid "Location of the main subject of the scene. Format: \"x,y\"."
 msgstr "Emplacement du sujet principal de la scène. Format : « x,y »."
 
-#: admin/imageadmin.py:58
+#: admin/imageadmin.py:54
 msgid "Invalid subject location format. "
 msgstr "Format d'emplacement de sujet invalide."
 
-#: admin/imageadmin.py:64
+#: admin/imageadmin.py:60
 msgid "Subject location is outside of the image. "
 msgstr "L'emplacement du sujet est en dehors de l'image."
 
-#: admin/imageadmin.py:73
+#: admin/imageadmin.py:69
 #, python-brace-format
 msgid "Your input: \"{subject_location}\". "
 msgstr "Votre entrée : « {subject_location} »."
@@ -249,23 +244,23 @@ msgstr "Filer"
 msgid "Media library"
 msgstr "Bibliotèque multimedia"
 
-#: models/abstract.py:36
+#: models/abstract.py:40
 msgid "default alt text"
 msgstr "texte alternatif par défaut"
 
-#: models/abstract.py:37
+#: models/abstract.py:41
 msgid "default caption"
 msgstr "légende par défaut"
 
-#: models/abstract.py:39
+#: models/abstract.py:43
 msgid "subject location"
 msgstr "emplacement du sujet"
 
-#: models/abstract.py:184
+#: models/abstract.py:181 models/imagemodels.py:32
 msgid "image"
 msgstr "image"
 
-#: models/abstract.py:185
+#: models/abstract.py:182 models/imagemodels.py:33
 msgid "images"
 msgstr "images"
 
@@ -273,7 +268,7 @@ msgstr "images"
 msgid "user"
 msgstr "utilisateur"
 
-#: models/clipboardmodels.py:19 models/filemodels.py:356
+#: models/clipboardmodels.py:19 models/filemodels.py:351
 msgid "files"
 msgstr "fichiers"
 
@@ -285,8 +280,8 @@ msgstr "presse-papiers"
 msgid "clipboards"
 msgstr "presse-papiers"
 
-#: models/clipboardmodels.py:42 models/filemodels.py:58
-#: models/filemodels.py:355
+#: models/clipboardmodels.py:42 models/filemodels.py:52
+#: models/filemodels.py:350
 msgid "file"
 msgstr "fichier"
 
@@ -298,56 +293,55 @@ msgstr "élément du presse-papiers"
 msgid "clipboard items"
 msgstr "éléments du presse-papiers"
 
-#: models/filemodels.py:56 templates/admin/filer/folder/change_form.html:8
+#: models/filemodels.py:50 templates/admin/filer/folder/change_form.html:8
 #: templates/admin/filer/folder/directory_listing.html:118
-#: templates/admin/filer/folder/new_folder_form.html:4
-#: templates/admin/filer/folder/new_folder_form.html:7
+#: templates/admin/filer/folder/new_folder_form.html:5
 #: templates/admin/filer/tools/clipboard/clipboard.html:27
 msgid "folder"
 msgstr "dossier"
 
-#: models/filemodels.py:59
+#: models/filemodels.py:53
 msgid "file size"
 msgstr "taille du fichier"
 
-#: models/filemodels.py:61
+#: models/filemodels.py:55
 msgid "sha1"
 msgstr "sha1"
 
-#: models/filemodels.py:63
+#: models/filemodels.py:57
 msgid "has all mandatory data"
 msgstr "possède toutes les données nécessaires"
 
-#: models/filemodels.py:65
+#: models/filemodels.py:59
 msgid "original filename"
 msgstr "nom de fichier originel"
 
-#: models/filemodels.py:67 models/foldermodels.py:104
+#: models/filemodels.py:61 models/foldermodels.py:104
 #: models/thumbnailoptionmodels.py:14
 msgid "name"
 msgstr "nom"
 
-#: models/filemodels.py:69
+#: models/filemodels.py:63
 msgid "description"
 msgstr "description"
 
-#: models/filemodels.py:73 models/foldermodels.py:106
+#: models/filemodels.py:67 models/foldermodels.py:106
 msgid "owner"
 msgstr "propriétaire"
 
-#: models/filemodels.py:75 models/foldermodels.py:110
+#: models/filemodels.py:69 models/foldermodels.py:110
 msgid "uploaded at"
 msgstr "téléversé le"
 
-#: models/filemodels.py:76 models/foldermodels.py:113
+#: models/filemodels.py:70 models/foldermodels.py:113
 msgid "modified at"
 msgstr "modifié le"
 
-#: models/filemodels.py:80
+#: models/filemodels.py:74
 msgid "Permissions disabled"
 msgstr "Permissions désactivées"
 
-#: models/filemodels.py:81
+#: models/filemodels.py:75
 msgid ""
 "Disable any permission checking for this file. File will be publicly "
 "accessible to anyone."
@@ -419,19 +413,19 @@ msgstr "permission du dossier"
 msgid "folder permissions"
 msgstr "permissions du dossier"
 
-#: models/imagemodels.py:21
+#: models/imagemodels.py:24
 msgid "date taken"
 msgstr "date de prise de vue"
 
-#: models/imagemodels.py:23
+#: models/imagemodels.py:26
 msgid "author"
 msgstr "auteur"
 
-#: models/imagemodels.py:24
+#: models/imagemodels.py:27
 msgid "must always publish author credit"
 msgstr "doit toujours publier l'attribution à l'auteur"
 
-#: models/imagemodels.py:25
+#: models/imagemodels.py:28
 msgid "must always publish copyright"
 msgstr "doit toujours publier le droit d'auteur"
 
@@ -900,22 +894,17 @@ msgstr "suivant"
 msgid "Select all %(total_count)s"
 msgstr "Sélectionner les %(total_count)s"
 
-#: templates/admin/filer/folder/new_folder_form.html:4
-#: templates/admin/filer/folder/new_folder_form.html:7
+#: templates/admin/filer/folder/new_folder_form.html:5
 msgid "Add new"
 msgstr "Ajouter un nouveau"
 
-#: templates/admin/filer/folder/new_folder_form.html:4
-msgid "Django site admin"
-msgstr ""
-
-#: templates/admin/filer/folder/new_folder_form.html:15
+#: templates/admin/filer/folder/new_folder_form.html:13
 msgid "Please correct the error below."
 msgid_plural "Please correct the errors below."
 msgstr[0] "Veuillez corriger l'erreur suivante."
 msgstr[1] "Veuillez corriger les erreurs suivantes."
 
-#: templates/admin/filer/folder/new_folder_form.html:30
+#: templates/admin/filer/folder/new_folder_form.html:28
 msgid "Save"
 msgstr "Sauvegarder"
 

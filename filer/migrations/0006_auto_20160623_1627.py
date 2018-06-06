@@ -5,6 +5,8 @@ from __future__ import unicode_literals
 from django.db import migrations, models
 import django.db.models.deletion
 
+from filer.settings import FILER_IMAGE_MODEL
+
 
 class Migration(migrations.Migration):
 
@@ -12,10 +14,11 @@ class Migration(migrations.Migration):
         ('filer', '0005_auto_20160623_1425'),
     ]
 
-    operations = [
-        migrations.AlterField(
-            model_name='image',
-            name='file_ptr',
-            field=models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, primary_key=True, related_name='%(app_label)s_%(class)s_file', serialize=False, to='filer.File'),
-        ),
-    ]
+    if not FILER_IMAGE_MODEL:
+        operations = [
+            migrations.AlterField(
+                model_name='image',
+                name='file_ptr',
+                field=models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, primary_key=True, related_name='%(app_label)s_%(class)s_file', serialize=False, to='filer.File'),
+            ),
+        ]

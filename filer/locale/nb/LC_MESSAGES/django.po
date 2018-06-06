@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: django Filer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-09 08:57+0200\n"
-"PO-Revision-Date: 2018-04-09 06:58+0000\n"
+"POT-Creation-Date: 2017-03-01 14:41-0500\n"
+"PO-Revision-Date: 2017-01-03 15:08+0000\n"
 "Last-Translator: yakky <i.spalletti@nephila.it>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/divio/django-filer/language/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -20,144 +20,139 @@ msgstr ""
 "Language: nb\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: admin/fileadmin.py:48 templates/admin/filer/tools/detail_info.html:166
+#: admin/fileadmin.py:53 templates/admin/filer/tools/detail_info.html:166
 msgid "Advanced"
 msgstr "Avansert"
 
-#: admin/fileadmin.py:156
+#: admin/fileadmin.py:165
 msgid "canonical URL"
 msgstr ""
 
-#: admin/folderadmin.py:387 admin/folderadmin.py:554
+#: admin/folderadmin.py:386 admin/folderadmin.py:553
 msgid ""
 "Items must be selected in order to perform actions on them. No items have "
 "been changed."
 msgstr "Du må velge noen elementer for å utføre handlinger på dem. Ingen elementer er endret."
 
-#: admin/folderadmin.py:407
+#: admin/folderadmin.py:406
 #, python-format
 msgid "%(total_count)s selected"
 msgid_plural "All %(total_count)s selected"
 msgstr[0] "%(total_count)s valgt"
 msgstr[1] "Alle %(total_count)s valgt"
 
-#: admin/folderadmin.py:431
-#, python-format
-msgid "Directory listing for %(folder_name)s"
-msgstr ""
-
-#: admin/folderadmin.py:446
+#: admin/folderadmin.py:445
 #, python-format
 msgid "0 of %(cnt)s selected"
 msgstr "0 av %(cnt)s valgt"
 
-#: admin/folderadmin.py:584
+#: admin/folderadmin.py:583
 msgid "No action selected."
 msgstr "Ingen handling valgt."
 
-#: admin/folderadmin.py:629
+#: admin/folderadmin.py:628
 #, python-format
 msgid "Successfully moved %(count)d files to clipboard."
 msgstr "Flyttet %(count)d filer til utklippstavlen."
 
-#: admin/folderadmin.py:635
+#: admin/folderadmin.py:634
 msgid "Move selected files to clipboard"
 msgstr "Flytt valgte filer til utklippstavlen"
 
-#: admin/folderadmin.py:673
+#: admin/folderadmin.py:672
 #, python-format
 msgid "Successfully disabled permissions for %(count)d files."
 msgstr "Fjernet tillatelser for %(count)d filer."
 
-#: admin/folderadmin.py:675
+#: admin/folderadmin.py:674
 #, python-format
 msgid "Successfully enabled permissions for %(count)d files."
 msgstr "Satte tillatelser for %(count)d filer."
 
-#: admin/folderadmin.py:684
+#: admin/folderadmin.py:683
 msgid "Enable permissions for selected files"
 msgstr "Sett tillatelser for valgte filer"
 
-#: admin/folderadmin.py:691
+#: admin/folderadmin.py:690
 msgid "Disable permissions for selected files"
 msgstr "Fjern tillatelser for valgte filer"
 
-#: admin/folderadmin.py:756
+#: admin/folderadmin.py:755
 #, python-format
 msgid "Successfully deleted %(count)d files and/or folders."
 msgstr "Slettet %(count)d filer og/eller mapper."
 
-#: admin/folderadmin.py:761
+#: admin/folderadmin.py:760
 msgid "Cannot delete files and/or folders"
 msgstr "Kan ikke slette filer og/eller mapper"
 
-#: admin/folderadmin.py:763
+#: admin/folderadmin.py:762
 msgid "Are you sure?"
 msgstr "Er du sikker?"
 
-#: admin/folderadmin.py:769
+#: admin/folderadmin.py:768
 msgid "Delete files and/or folders"
 msgstr "Slett filer og/eller mapper"
 
-#: admin/folderadmin.py:791
+#: admin/folderadmin.py:790
 msgid "Delete selected files and/or folders"
 msgstr "Slett valgte filer og/eller mapper"
 
-#: admin/folderadmin.py:906
+#: admin/folderadmin.py:905
 #, python-format
 msgid "Folders with names %s already exist at the selected destination"
 msgstr ""
 
-#: admin/folderadmin.py:910
+#: admin/folderadmin.py:909
 #, python-format
 msgid ""
 "Successfully moved %(count)d files and/or folders to folder "
 "'%(destination)s'."
 msgstr "Flyttet %(count)d filer og/eller mapper til mappen \"%(destination)s\"."
 
-#: admin/folderadmin.py:918 admin/folderadmin.py:920
+#: admin/folderadmin.py:917 admin/folderadmin.py:919
 msgid "Move files and/or folders"
 msgstr "Flytt filer og/eller mapper"
 
-#: admin/folderadmin.py:935
+#: admin/folderadmin.py:934
 msgid "Move selected files and/or folders"
 msgstr "Flytt valgte filer og/eller mapper"
 
-#: admin/folderadmin.py:992
+#: admin/folderadmin.py:991
 #, python-format
 msgid "Successfully renamed %(count)d files."
 msgstr "Endret navn på %(count)d filer."
 
-#: admin/folderadmin.py:1001 admin/folderadmin.py:1003
-#: admin/folderadmin.py:1018
+#: admin/folderadmin.py:1000 admin/folderadmin.py:1002
+#: admin/folderadmin.py:1017
 msgid "Rename files"
 msgstr "Endre navn på filer"
 
-#: admin/folderadmin.py:1113
+#: admin/folderadmin.py:1112
 #, python-format
 msgid ""
 "Successfully copied %(count)d files and/or folders to folder "
 "'%(destination)s'."
 msgstr "Kopierte %(count)d filer og/eller mapper til mappen \"%(destination)s\"."
 
-#: admin/folderadmin.py:1131 admin/folderadmin.py:1133
+#: admin/folderadmin.py:1130 admin/folderadmin.py:1132
 msgid "Copy files and/or folders"
 msgstr "Kopier filer og/eller mapper"
 
-#: admin/folderadmin.py:1150
+#: admin/folderadmin.py:1149
 msgid "Copy selected files and/or folders"
 msgstr "Kopier valgte filer og/eller mapper"
 
-#: admin/folderadmin.py:1255
+#: admin/folderadmin.py:1254
 #, python-format
 msgid "Successfully resized %(count)d images."
 msgstr "Endret størrelse på %(count)d bilder."
 
-#: admin/folderadmin.py:1262 admin/folderadmin.py:1264
+#: admin/folderadmin.py:1261 admin/folderadmin.py:1263
 msgid "Resize images"
 msgstr "Endre størrelse på bilder"
 
-#: admin/folderadmin.py:1280
+#: admin/folderadmin.py:1279
 msgid "Resize selected images"
 msgstr "Endre størrelse på valgte bilder"
 
@@ -210,23 +205,23 @@ msgstr "Miniatyrbildevalg eller parametre for endring av størrelse må velges."
 msgid "Resize parameters must be choosen."
 msgstr "Parametre for endring av størrelse må velges."
 
-#: admin/imageadmin.py:20 admin/imageadmin.py:98
+#: admin/imageadmin.py:16 admin/imageadmin.py:94
 msgid "Subject location"
 msgstr "Fokuseringsområde"
 
-#: admin/imageadmin.py:21
+#: admin/imageadmin.py:17
 msgid "Location of the main subject of the scene. Format: \"x,y\"."
 msgstr ""
 
-#: admin/imageadmin.py:58
+#: admin/imageadmin.py:54
 msgid "Invalid subject location format. "
 msgstr ""
 
-#: admin/imageadmin.py:64
+#: admin/imageadmin.py:60
 msgid "Subject location is outside of the image. "
 msgstr ""
 
-#: admin/imageadmin.py:73
+#: admin/imageadmin.py:69
 #, python-brace-format
 msgid "Your input: \"{subject_location}\". "
 msgstr ""
@@ -245,23 +240,23 @@ msgstr "Filer"
 msgid "Media library"
 msgstr ""
 
-#: models/abstract.py:36
+#: models/abstract.py:40
 msgid "default alt text"
 msgstr "standard alternativtekst"
 
-#: models/abstract.py:37
+#: models/abstract.py:41
 msgid "default caption"
 msgstr "standard undertekst"
 
-#: models/abstract.py:39
+#: models/abstract.py:43
 msgid "subject location"
 msgstr "fokuseringsområde"
 
-#: models/abstract.py:184
+#: models/abstract.py:181 models/imagemodels.py:32
 msgid "image"
 msgstr "bilde"
 
-#: models/abstract.py:185
+#: models/abstract.py:182 models/imagemodels.py:33
 msgid "images"
 msgstr "bilder"
 
@@ -269,7 +264,7 @@ msgstr "bilder"
 msgid "user"
 msgstr "bruker"
 
-#: models/clipboardmodels.py:19 models/filemodels.py:356
+#: models/clipboardmodels.py:19 models/filemodels.py:351
 msgid "files"
 msgstr "filer"
 
@@ -281,8 +276,8 @@ msgstr "utklippstavle"
 msgid "clipboards"
 msgstr "utklippstavler"
 
-#: models/clipboardmodels.py:42 models/filemodels.py:58
-#: models/filemodels.py:355
+#: models/clipboardmodels.py:42 models/filemodels.py:52
+#: models/filemodels.py:350
 msgid "file"
 msgstr "fil"
 
@@ -294,56 +289,55 @@ msgstr "element på utklippstavle"
 msgid "clipboard items"
 msgstr "elementer på utklippstavle"
 
-#: models/filemodels.py:56 templates/admin/filer/folder/change_form.html:8
+#: models/filemodels.py:50 templates/admin/filer/folder/change_form.html:8
 #: templates/admin/filer/folder/directory_listing.html:118
-#: templates/admin/filer/folder/new_folder_form.html:4
-#: templates/admin/filer/folder/new_folder_form.html:7
+#: templates/admin/filer/folder/new_folder_form.html:5
 #: templates/admin/filer/tools/clipboard/clipboard.html:27
 msgid "folder"
 msgstr "mappe"
 
-#: models/filemodels.py:59
+#: models/filemodels.py:53
 msgid "file size"
 msgstr "filstørrelse"
 
-#: models/filemodels.py:61
+#: models/filemodels.py:55
 msgid "sha1"
 msgstr "sha1"
 
-#: models/filemodels.py:63
+#: models/filemodels.py:57
 msgid "has all mandatory data"
 msgstr "har alle påkrevde data"
 
-#: models/filemodels.py:65
+#: models/filemodels.py:59
 msgid "original filename"
 msgstr "originalt filnavn"
 
-#: models/filemodels.py:67 models/foldermodels.py:104
+#: models/filemodels.py:61 models/foldermodels.py:104
 #: models/thumbnailoptionmodels.py:14
 msgid "name"
 msgstr "navn"
 
-#: models/filemodels.py:69
+#: models/filemodels.py:63
 msgid "description"
 msgstr "beskrivelse"
 
-#: models/filemodels.py:73 models/foldermodels.py:106
+#: models/filemodels.py:67 models/foldermodels.py:106
 msgid "owner"
 msgstr "eier"
 
-#: models/filemodels.py:75 models/foldermodels.py:110
+#: models/filemodels.py:69 models/foldermodels.py:110
 msgid "uploaded at"
 msgstr "lastet opp"
 
-#: models/filemodels.py:76 models/foldermodels.py:113
+#: models/filemodels.py:70 models/foldermodels.py:113
 msgid "modified at"
 msgstr "endret"
 
-#: models/filemodels.py:80
+#: models/filemodels.py:74
 msgid "Permissions disabled"
 msgstr "Tillatelser er deaktivert"
 
-#: models/filemodels.py:81
+#: models/filemodels.py:75
 msgid ""
 "Disable any permission checking for this file. File will be publicly "
 "accessible to anyone."
@@ -415,19 +409,19 @@ msgstr "tillatelse for mappe"
 msgid "folder permissions"
 msgstr "tillatelser for mappe"
 
-#: models/imagemodels.py:21
+#: models/imagemodels.py:24
 msgid "date taken"
 msgstr "dato bildet ble tatt"
 
-#: models/imagemodels.py:23
+#: models/imagemodels.py:26
 msgid "author"
 msgstr "opphavsperson"
 
-#: models/imagemodels.py:24
+#: models/imagemodels.py:27
 msgid "must always publish author credit"
 msgstr "må alltid publisere opphavsperson"
 
-#: models/imagemodels.py:25
+#: models/imagemodels.py:28
 msgid "must always publish copyright"
 msgstr "må alltid publisere opphavsrett"
 
@@ -896,22 +890,17 @@ msgstr "neste"
 msgid "Select all %(total_count)s"
 msgstr ""
 
-#: templates/admin/filer/folder/new_folder_form.html:4
-#: templates/admin/filer/folder/new_folder_form.html:7
+#: templates/admin/filer/folder/new_folder_form.html:5
 msgid "Add new"
 msgstr "Legg til ny"
 
-#: templates/admin/filer/folder/new_folder_form.html:4
-msgid "Django site admin"
-msgstr ""
-
-#: templates/admin/filer/folder/new_folder_form.html:15
+#: templates/admin/filer/folder/new_folder_form.html:13
 msgid "Please correct the error below."
 msgid_plural "Please correct the errors below."
 msgstr[0] "Vennligst rett feilen under"
 msgstr[1] "Vennligst rett feilene under."
 
-#: templates/admin/filer/folder/new_folder_form.html:30
+#: templates/admin/filer/folder/new_folder_form.html:28
 msgid "Save"
 msgstr "Lagre"
 

@@ -41,12 +41,6 @@ class FileManager(PolymorphicManager):
         return [i for i in self.exclude(pk=file_obj.pk).filter(sha1=file_obj.sha1)]
 
 
-def is_public_default():
-    # not using this setting directly as `is_public` default value
-    # so that Django doesn't generate new migrations upon setting change
-    return filer_settings.FILER_IS_PUBLIC_DEFAULT
-
-
 @python_2_unicode_compatible
 class File(PolymorphicModel, mixins.IconsMixin):
     file_type = 'File'
@@ -56,7 +50,7 @@ class File(PolymorphicModel, mixins.IconsMixin):
     folder = models.ForeignKey(Folder, verbose_name=_('folder'), related_name='all_files',
         null=True, blank=True)
     file = MultiStorageFileField(_('file'), null=True, blank=True, max_length=255)
-    _file_size = models.BigIntegerField(_('file size'), null=True, blank=True)
+    _file_size = models.IntegerField(_('file size'), null=True, blank=True)
 
     sha1 = models.CharField(_('sha1'), max_length=40, blank=True, default='')
 
@@ -76,7 +70,7 @@ class File(PolymorphicModel, mixins.IconsMixin):
     modified_at = models.DateTimeField(_('modified at'), auto_now=True)
 
     is_public = models.BooleanField(
-        default=is_public_default,
+        default=filer_settings.FILER_IS_PUBLIC_DEFAULT,
         verbose_name=_('Permissions disabled'),
         help_text=_('Disable any permission checking for this '
                     'file. File will be publicly accessible '
@@ -256,11 +250,12 @@ class File(PolymorphicModel, mixins.IconsMixin):
         return text
 
     def get_admin_change_url(self):
+        if LTE_DJANGO_1_7:
+            model_name = self._meta.module_name
+        else:
+            model_name = self._meta.model_name
         return urlresolvers.reverse(
-            'admin:{0}_{1}_change'.format(
-                self._meta.app_label,
-                self._meta.model_name,
-            ),
+            'admin:{0}_{1}_change'.format(self._meta.app_label, model_name),
             args=(self.pk,)
         )
 
@@ -289,9 +284,9 @@ class File(PolymorphicModel, mixins.IconsMixin):
     @property
     def canonical_time(self):
         if settings.USE_TZ:
-            return int((self.uploaded_at - datetime(1970, 1, 1, 1, tzinfo=timezone.utc)).total_seconds())
+            return int((self.uploaded_at - datetime(1970, 1, 1, tzinfo=timezone.utc)).total_seconds())
         else:
-            return int((self.uploaded_at - datetime(1970, 1, 1, 1)).total_seconds())
+            return int((self.uploaded_at - datetime(1970, 1, 1)).total_seconds())
 
     @property
     def canonical_url(self):
