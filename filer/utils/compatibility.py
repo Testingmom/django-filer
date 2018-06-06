@@ -16,7 +16,7 @@ def truncate_words(s, num, end_text='...'):
 truncate_words = allow_lazy(truncate_words, six.text_type)
 
 LTE_DJANGO_1_6 = django.VERSION < (1, 7)
-LTE_DJANGO_1_7 = django.VERSION < (1, 8) 
+LTE_DJANGO_1_7 = django.VERSION < (1, 8)
 LTE_DJANGO_1_8 = django.VERSION < (1, 9)
 LTE_DJANGO_1_9 = django.VERSION < (1, 10)
 GTE_DJANGO_1_10 = django.VERSION >= (1, 10)

@@ -13,7 +13,7 @@ from django.db import models
 from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _
 
-from . import mixins
+from filer.models import mixins
 from .. import settings as filer_settings
 from ..fields.multistorage_file import MultiStorageFileField
 from ..utils.compatibility import LTE_DJANGO_1_7, GTE_DJANGO_1_10, python_2_unicode_compatible
